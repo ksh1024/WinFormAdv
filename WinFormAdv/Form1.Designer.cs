@@ -161,8 +161,9 @@
             // 끝내ToolStripMenuItem
             // 
             this.끝내ToolStripMenuItem.Name = "끝내ToolStripMenuItem";
-            this.끝내ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.끝내ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내ToolStripMenuItem.Text = "끝내기";
+            this.끝내ToolStripMenuItem.Click += new System.EventHandler(this.끝내ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
