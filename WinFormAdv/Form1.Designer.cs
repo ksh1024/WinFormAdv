@@ -122,7 +122,7 @@
             // 새창ToolStripMenuItem
             // 
             this.새창ToolStripMenuItem.Name = "새창ToolStripMenuItem";
-            this.새창ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.새창ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.새창ToolStripMenuItem.Text = "새 창";
             // 
             // 열기ToolStripMenuItem
@@ -135,43 +135,43 @@
             // 저장ToolStripMenuItem
             // 
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
-            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.저장ToolStripMenuItem.Text = "저장";
             // 
             // 다른이름으로저장ToolStripMenuItem
             // 
             this.다른이름으로저장ToolStripMenuItem.Name = "다른이름으로저장ToolStripMenuItem";
-            this.다른이름으로저장ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.다른이름으로저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.다른이름으로저장ToolStripMenuItem.Text = "다른 이름으로 저장";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // 페이지설정ToolStripMenuItem
             // 
             this.페이지설정ToolStripMenuItem.Name = "페이지설정ToolStripMenuItem";
-            this.페이지설정ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.페이지설정ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.페이지설정ToolStripMenuItem.Text = "페이지 설정";
             // 
             // 인쇄ToolStripMenuItem
             // 
             this.인쇄ToolStripMenuItem.Name = "인쇄ToolStripMenuItem";
-            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.인쇄ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.인쇄ToolStripMenuItem.Text = "인쇄";
             // 
             // 끝내ToolStripMenuItem
             // 
             this.끝내ToolStripMenuItem.Name = "끝내ToolStripMenuItem";
-            this.끝내ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.끝내ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내ToolStripMenuItem.Text = "끝내기";
             this.끝내ToolStripMenuItem.Click += new System.EventHandler(this.끝내ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // 편집ToolStripMenuItem
             // 
@@ -320,7 +320,7 @@
             this.축소ToolStripMenuItem,
             this.확대하기축소하기기본값복원ToolStripMenuItem});
             this.확대하기축소하기ToolStripMenuItem.Name = "확대하기축소하기ToolStripMenuItem";
-            this.확대하기축소하기ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.확대하기축소하기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.확대하기축소하기ToolStripMenuItem.Text = "확대하기/축소하기";
             // 
             // 확대ToolStripMenuItem
@@ -328,23 +328,26 @@
             this.확대ToolStripMenuItem.Name = "확대ToolStripMenuItem";
             this.확대ToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.확대ToolStripMenuItem.Text = "확대";
+            this.확대ToolStripMenuItem.Click += new System.EventHandler(this.확대ToolStripMenuItem_Click);
             // 
             // 축소ToolStripMenuItem
             // 
             this.축소ToolStripMenuItem.Name = "축소ToolStripMenuItem";
             this.축소ToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.축소ToolStripMenuItem.Text = "축소";
+            this.축소ToolStripMenuItem.Click += new System.EventHandler(this.축소ToolStripMenuItem_Click);
             // 
             // 확대하기축소하기기본값복원ToolStripMenuItem
             // 
             this.확대하기축소하기기본값복원ToolStripMenuItem.Name = "확대하기축소하기기본값복원ToolStripMenuItem";
             this.확대하기축소하기기본값복원ToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.확대하기축소하기기본값복원ToolStripMenuItem.Text = "확대하기/축소하기 기본값 복원";
+            this.확대하기축소하기기본값복원ToolStripMenuItem.Click += new System.EventHandler(this.확대하기축소하기기본값복원ToolStripMenuItem_Click);
             // 
             // 상태표시줄ToolStripMenuItem
             // 
             this.상태표시줄ToolStripMenuItem.Name = "상태표시줄ToolStripMenuItem";
-            this.상태표시줄ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.상태표시줄ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.상태표시줄ToolStripMenuItem.Text = "상태 표시줄";
             // 
             // 도움말ToolStripMenuItem
@@ -368,18 +371,18 @@
             // 피드백보내ToolStripMenuItem
             // 
             this.피드백보내ToolStripMenuItem.Name = "피드백보내ToolStripMenuItem";
-            this.피드백보내ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.피드백보내ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.피드백보내ToolStripMenuItem.Text = "피드백 보내기";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // 메모장정보ToolStripMenuItem
             // 
             this.메모장정보ToolStripMenuItem.Name = "메모장정보ToolStripMenuItem";
-            this.메모장정보ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.메모장정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.메모장정보ToolStripMenuItem.Text = "메모장 정보";
             // 
             // toolStripMenuItem1
