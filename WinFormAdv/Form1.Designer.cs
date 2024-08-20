@@ -61,6 +61,8 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.모두선택ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.시간날짜ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.자동줄바ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.글꼴ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,6 +122,9 @@
             // 
             // 서식ToolStripMenuItem
             // 
+            this.서식ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.자동줄바ToolStripMenuItem,
+            this.글꼴ToolStripMenuItem});
             this.서식ToolStripMenuItem.Name = "서식ToolStripMenuItem";
             this.서식ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.서식ToolStripMenuItem.Text = "서식";
@@ -292,6 +297,18 @@
             this.시간날짜ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.시간날짜ToolStripMenuItem.Text = "시간/날짜";
             // 
+            // 자동줄바ToolStripMenuItem
+            // 
+            this.자동줄바ToolStripMenuItem.Name = "자동줄바ToolStripMenuItem";
+            this.자동줄바ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.자동줄바ToolStripMenuItem.Text = "자동 줄 바꿈";
+            // 
+            // 글꼴ToolStripMenuItem
+            // 
+            this.글꼴ToolStripMenuItem.Name = "글꼴ToolStripMenuItem";
+            this.글꼴ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.글꼴ToolStripMenuItem.Text = "글꼴";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -343,6 +360,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem 모두선택ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 시간날짜ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 자동줄바ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 글꼴ToolStripMenuItem;
     }
 }
 
