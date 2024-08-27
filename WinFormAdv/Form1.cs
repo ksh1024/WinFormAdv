@@ -13,6 +13,8 @@ namespace WinFormAdv
     public partial class Form1 : Form
     {
         public static int PROGRESS_BAR_STEP= 10;
+        private string currentFilePath = string.Empty;
+
         public Form1()
         {
             InitializeComponent();
@@ -83,5 +85,43 @@ namespace WinFormAdv
             else
                 toolStripProgressBar1.Value -= PROGRESS_BAR_STEP;
         }
+
+        private void 저장ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(currentFilePath))
+            {
+                System.IO.File.WriteAllText(currentFilePath, textBox1.Text);
+                toolStripStatusLabelFilename.Text = $"파일이 저장되었습니다: {currentFilePath}";
+            }
+            else
+            {
+                다른이름으로저장ToolStripMenuItem_Click(sender, e);
+            }
+        }
+
+        private void 다른이름으로저장ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "텍스트 파일(*.txt)|*.txt|모든 파일(*.*)|*.*";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                System.IO.File.WriteAllText(sfd.FileName, textBox1.Text);
+                currentFilePath = sfd.FileName;
+                toolStripStatusLabelFilename.Text = $"파일이 저장되었습니다: {currentFilePath}";
+            }
+        }
+
+        private void toolStripStatusLabelFilename_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(currentFilePath))
+            {
+                MessageBox.Show($"현재 파일명: {System.IO.Path.GetFileName(currentFilePath)}", "파일명 정보", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("저장된 파일이 없습니다.", "파일명 정보", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
     }
 }
